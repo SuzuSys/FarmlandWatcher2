@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="農耕地データ収集システム"/>
+    <HelloWorld msg="農耕地データ収集システム!!!!!!"/>
   </div>
 </template>
 
