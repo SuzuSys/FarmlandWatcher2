@@ -21,7 +21,8 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello Farmers!');
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(3000);
+// process.env.PORT || 
