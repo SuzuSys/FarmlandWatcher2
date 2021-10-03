@@ -3,6 +3,7 @@ node_modules
 /dist
 /backend/info.log
 /backend/image/
+/backend/csv/
 
 
 # local env files
