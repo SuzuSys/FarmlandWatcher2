@@ -4,6 +4,7 @@ node_modules
 /backend/info.log
 /backend/image/
 /backend/csv/
+/backend/temp_file/
 
 
 # local env files
