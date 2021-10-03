@@ -20,8 +20,22 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'temp_file/');
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  }
+});
+const upload = multer({storage: storage});
+
 app.get('/', (req, res) => {
   res.send('Hello Farmers!');
+});
+
+app.post('/', upload.array('file[]'), (req, res) => {
+  res.send('Thank you for sending a csv!');
 });
 
 app.listen(3000);
