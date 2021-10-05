@@ -5,7 +5,7 @@ node_modules
 /backend/image/
 /backend/csv/
 /backend/temp_file/
-
+/certs/
 
 # local env files
 .env.local

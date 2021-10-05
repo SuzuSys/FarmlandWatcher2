@@ -35,7 +35,14 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', upload.array('file[]'), (req, res) => {
-  res.send('Thank you for sending a csv!');
+  try {
+    const contents = req.body;
+    logger.log(contents);
+    res.send('Thank you for sending a csv!');
+  }
+  catch (err) {
+    logger.log(err);
+  }
 });
 
 app.listen(3000);
